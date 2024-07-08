@@ -116,19 +116,19 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11            &kp F12
-&trans      &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN    &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &ext_power EP_TOG  &soft_off
-                                        &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE       &kp RET     &to 3       &to 0
+&kp F1          &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
+&kp C_AL_FILES  &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &soft_off
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp K_MUTE       &ext_power EP_TOG
+                                            &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE       &kp RET     &to 3       &to 0
             >;
         };
 
         numpad {
             bindings = <
-&trans  &kp COMMA  &kp PERIOD  &trans            &trans        &trans       &kp KP_NUMLOCK  &kp N7  &kp N8  &kp N9  &kp MINUS  &kp DOT
-&trans  &trans     &trans      &trans            &trans        &trans       &kp INS         &kp N4  &kp N5  &kp N6  &kp PLUS   &trans
-&trans  &trans     &trans      &trans            &trans        &trans       &trans          &kp N1  &kp N2  &kp N3  &kp COMMA  &trans
-                               &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE    &kp ENTER       &to 4   &to 0
+&trans  &kp COMMA  &kp PERIOD  &trans            &trans        &trans       &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &kp DOT
+&trans  &kp HOME   &kp PG_DN   &kp PG_UP         &kp END       &trans       &kp INS         &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp PLUS   &trans
+&trans  &trans     &trans      &trans            &trans        &trans       &trans          &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &trans
+                               &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE    &kp ENTER       &to 4      &to 0
             >;
         };
 
