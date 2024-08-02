@@ -11,24 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        qwerty {
-            bindings = <&to 4>;
-            key-positions = <40 37>;
-            timeout-ms = <1>;
-            require-prior-idle-ms = <1000>;
-        };
-
-        return {
-            bindings = <&to 0>;
-            key-positions = <37 40>;
-            layers = <4>;
-            timeout-ms = <1>;
-            require-prior-idle-ms = <1000>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         cedilha: cedilha {
