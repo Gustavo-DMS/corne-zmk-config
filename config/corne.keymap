@@ -16,7 +16,7 @@
 
         qwerty {
             bindings = <&to 4>;
-            key-positions = <37 40>;
+            key-positions = <40 37>;
             timeout-ms = <1>;
             require-prior-idle-ms = <1000>;
         };
@@ -37,6 +37,13 @@
             bindings = <&kp RA(COMMA)>;
             label = "CEDILHA";
         };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -44,7 +51,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CAPS_LOCK";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CLCK>, <&none>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CLCK>, <&caps_word>;
         };
 
         layer_change: layer_change {
@@ -118,7 +125,7 @@
 
             bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
-&out OUT_TOG  &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &soft_off
+&out OUT_TOG  &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &kp K_POWER
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
                                           &kp LEFT_CONTROL  &kp LEFT_GUI  &kp SPACE       &kp RET     &to 3       &to 0
             >;
