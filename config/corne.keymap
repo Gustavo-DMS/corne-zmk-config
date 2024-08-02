@@ -88,8 +88,8 @@
 
             bindings = <
 &kp TAB                            &kp FSLH  &kp COMMA  &kp DOT           &kp P     &kp Y        &kp F    &kp G              &kp C       &kp R  &kp L  &backspace_del
-&two_second_ht LEFT_ALT RIGHT_ALT  &kp A     &kp O      &kp E             &kp U     &kp I        &kp D    &kp H              &kp T       &kp N  &kp S  &kp GRAVE
-&caps_lock                         &cedilha  &kp SEMI   &kp Q             &kp J     &kp K        &kp X    &kp B              &kp W       &kp V  &kp Z  &kp SINGLE_QUOTE
+&two_second_ht LEFT_ALT RIGHT_ALT  &kp A     &kp O      &kp E             &kp U     &kp I        &kp D    &kp H              &kp T       &kp N  &kp S  &mt SQT GRAVE
+&caps_lock                         &cedilha  &kp SEMI   &kp Q             &kp J     &kp K        &kp X    &kp B              &kp M       &kp W  &kp V  &kp Z
                                                         &kp LEFT_CONTROL  &kp LGUI  &kp SPACE    &kp RET  &layer_change 2 1  &kp ESCAPE
             >;
         };
