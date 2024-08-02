@@ -57,6 +57,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        alt: alt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT";
+            bindings = <&kp LEFT_ALT>, <&kp RIGHT_ALT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -70,10 +79,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB                            &kp FSLH  &kp COMMA  &kp DOT           &kp P      &kp Y       &kp F    &kp G              &kp C       &kp R  &kp L  &backspace_del
-&two_second_ht LEFT_ALT RIGHT_ALT  &kp A     &kp O      &kp E             &kp U      &kp I       &kp D    &kp H              &kp T       &kp N  &kp S  &mt SQT GRAVE
-&caps_lock                         &cedilha  &kp SEMI   &kp Q             &kp J      &kp K       &kp X    &kp B              &kp M       &kp W  &kp V  &kp Z
-                                                        &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 2 1  &kp ESCAPE
+&kp TAB     &kp FSLH  &kp COMMA  &kp DOT           &kp P      &kp Y       &kp F    &kp G              &kp C       &kp R  &kp L  &backspace_del
+&alt        &kp A     &kp O      &kp E             &kp U      &kp I       &kp D    &kp H              &kp T       &kp N  &kp S  &mt SQT GRAVE
+&caps_lock  &cedilha  &kp SEMI   &kp Q             &kp J      &kp K       &kp X    &kp B              &kp M       &kp W  &kp V  &kp Z
+                                 &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 2 1  &kp ESCAPE
             >;
         };
 
@@ -85,10 +94,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB                        &kp EXCL  &kp AT  &kp HASH          &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK         &kp LPAR          &kp RPAR           &kp BACKSLASH
-&two_second_ht LALT RIGHT_ALT  &kp N1    &kp N2  &kp N3            &kp N4     &kp N5       &kp MINUS  &kp EQUAL  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
-&kp LSHFT                      &kp N6    &kp N7  &kp N8            &kp N9     &kp N0       &kp UNDER  &kp PLUS   &kp LBRC          &kp RBRC          &kp PIPE           &kp LEFT_ALT
-                                                 &kp LEFT_CONTROL  &kp SPACE  &kp LGUI     &kp RET    &to 2      &to 0
+&kp TAB    &kp EXCL  &kp AT  &kp HASH          &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK         &kp LPAR          &kp RPAR           &kp BACKSLASH
+&alt       &kp N1    &kp N2  &kp N3            &kp N4     &kp N5       &kp MINUS  &kp EQUAL  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp GRAVE
+&kp LSHFT  &kp N6    &kp N7  &kp N8            &kp N9     &kp N0       &kp UNDER  &kp PLUS   &kp LBRC          &kp RBRC          &kp PIPE           &kp LEFT_ALT
+                             &kp LEFT_CONTROL  &kp SPACE  &kp LGUI     &kp RET    &to 2      &to 0
             >;
         };
 
@@ -100,10 +109,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1                             &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
-&two_second_ht LEFT_ALT RIGHT_ALT  &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &out OUT_TOG
-&bt BT_CLR                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
-                                                               &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 3       &to 0
+&kp F1      &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
+&alt        &to 0         &to 2         &to 1             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &out OUT_TOG
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
+                                        &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 3       &to 0
             >;
         };
 
@@ -118,10 +127,10 @@
 
         gaming {
             bindings = <
-&kp TAB                            &kp Q  &kp W  &kp E             &kp R      &kp T       &kp Y    &kp U              &kp I      &kp O    &kp P     &backspace_del
-&two_second_ht LEFT_ALT RIGHT_ALT  &kp A  &kp S  &kp D             &kp F      &kp G       &kp H    &kp J              &kp K      &kp L    &kp SEMI  &kp GRAVE
-&caps_lock                         &kp Z  &kp X  &kp C             &kp V      &kp B       &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                                                 &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 2 1  &kp ESC
+&kp TAB     &kp Q  &kp W  &kp E             &kp R      &kp T       &kp Y    &kp U              &kp I      &kp O    &kp P     &backspace_del
+&alt        &kp A  &kp S  &kp D             &kp F      &kp G       &kp H    &kp J              &kp K      &kp L    &kp SEMI  &kp GRAVE
+&caps_lock  &kp Z  &kp X  &kp C             &kp V      &kp B       &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+                          &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 2 1  &kp ESC
             >;
         };
     };
