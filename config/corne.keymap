@@ -82,7 +82,16 @@
 &kp TAB     &kp FSLH  &kp COMMA  &kp DOT           &kp P      &kp Y       &kp F    &kp G              &kp C       &kp R  &kp L  &backspace_del
 &caps_lock  &kp A     &kp O      &kp E             &kp U      &kp I       &kp D    &kp H              &kp T       &kp N  &kp S  &mt SQT GRAVE
 &alt        &cedilha  &kp SEMI   &kp Q             &kp J      &kp K       &kp X    &kp B              &kp M       &kp W  &kp V  &kp Z
-                                 &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 2 1  &kp ESCAPE
+                                 &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 3 2  &kp ESCAPE
+            >;
+        };
+
+        gaming {
+            bindings = <
+&kp TAB     &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y    &kp U              &kp I      &kp O    &kp P     &backspace_del
+&caps_lock  &kp A  &kp S  &kp D             &kp F      &kp G    &kp H    &kp J              &kp K      &kp L    &kp SEMI  &kp GRAVE
+&alt        &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+                          &kp LEFT_CONTROL  &kp SPACE  &mo 2    &kp RET  &layer_change 3 2  &kp ESC
             >;
         };
 
@@ -97,7 +106,7 @@
 &kp TAB     &kp EXCL  &kp AT  &kp HASH          &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK         &kp LPAR          &kp RPAR           &backspace_del
 &caps_lock  &kp N1    &kp N2  &kp N3            &kp N4     &kp N5       &kp MINUS  &kp EQUAL  &kp SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
 &alt        &kp N6    &kp N7  &kp N8            &kp N9     &kp N0       &kp UNDER  &kp PLUS   &kp LBRC          &kp RBRC          &kp SINGLE_QUOTE   &kp GRAVE
-                              &kp LEFT_CONTROL  &kp SPACE  &kp LGUI     &kp RET    &to 2      &to 0
+                              &kp LEFT_CONTROL  &kp SPACE  &kp LGUI     &kp RET    &to 3      &to 0
             >;
         };
 
@@ -110,9 +119,9 @@
 
             bindings = <
 &kp F1      &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
-&alt        &to 0         &to 1         &to 2             &to 3         &to 4           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &out OUT_TOG
+&alt        &to 0         &to 2         &to 3             &to 4         &to 1           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &out OUT_TOG
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
-                                        &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 3       &to 0
+                                        &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 4       &to 0
             >;
         };
 
@@ -121,16 +130,7 @@
 &trans  &kp COMMA  &kp PERIOD  &trans            &trans     &trans      &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &kp DOT
 &trans  &kp HOME   &kp PG_DN   &kp PG_UP         &kp END    &trans      &kp INS         &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp PLUS   &trans
 &trans  &trans     &trans      &trans            &trans     &trans      &trans          &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &trans
-                               &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp ENTER       &to 4      &to 0
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp TAB     &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y    &kp U              &kp I      &kp O    &kp P     &backspace_del
-&caps_lock  &kp A  &kp S  &kp D             &kp F      &kp G    &kp H    &kp J              &kp K      &kp L    &kp SEMI  &kp GRAVE
-&alt        &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                          &kp LEFT_CONTROL  &kp SPACE  &mo 1    &kp RET  &layer_change 2 1  &kp ESC
+                               &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp ENTER       &to 1      &to 0
             >;
         };
 
