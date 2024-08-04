@@ -139,7 +139,7 @@
 &trans  &trans     &trans      &trans            &trans     &trans      &kp KP_N0       &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &trans
                                &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp ENTER       &to 1      &to 0
             >;
-            display-name = "NUNPAD";
+            display-name = "NUMPAD";
 
         };
 
