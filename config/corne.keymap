@@ -84,6 +84,7 @@
 &alt        &cedilha  &kp SEMI   &kp Q             &kp J      &kp K       &kp X    &kp B              &kp M       &kp W  &kp V  &kp Z
                                  &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp RET  &layer_change 3 2  &kp ESCAPE
             >;
+
             display-name = "DVORAK";
         };
 
@@ -94,8 +95,8 @@
 &alt        &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N    &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
                           &kp LEFT_CONTROL  &kp SPACE  &mo 2    &kp RET  &layer_change 3 2  &kp ESC
             >;
-            display-name = "GAMING";
 
+            display-name = "GAMING";
         };
 
         symbols_numbers {
@@ -111,8 +112,8 @@
 &alt        &kp N6    &kp N7  &kp N8            &kp N9     &kp N0       &kp UNDER  &kp PLUS   &kp LBRC          &kp RBRC          &kp SINGLE_QUOTE   &kp GRAVE
                               &kp LEFT_CONTROL  &kp SPACE  &kp LGUI     &kp RET    &to 3      &to 0
             >;
-            display-name = "SYMBOLS";
 
+            display-name = "SYMBOLS";
         };
 
         fn_layer_bt {
@@ -128,19 +129,19 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
                                         &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 4       &to 0
             >;
-            display-name = "UTILS";
 
+            display-name = "UTILS";
         };
 
         numpad {
             bindings = <
-&trans  &kp COMMA  &kp PERIOD  &trans            &trans     &trans      &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &kp DOT
+&trans  &kp COMMA  &kp PERIOD  &trans            &trans     &trans      &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &backspace_del
 &trans  &kp HOME   &kp PG_DN   &kp PG_UP         &kp END    &trans      &kp INS         &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp PLUS   &trans
-&trans  &trans     &trans      &trans            &trans     &trans      &kp KP_N0       &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &trans
+&trans  &trans     &trans      &trans            &trans     &trans      &kp KP_N0       &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp DOT
                                &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp ENTER       &to 1      &to 0
             >;
-            display-name = "NUMPAD";
 
+            display-name = "NUMPAD";
         };
 
         layer_5 {
