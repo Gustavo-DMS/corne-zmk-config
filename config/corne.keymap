@@ -17,13 +17,15 @@
         combo_gaming {
             bindings = <&to 1>;
             key-positions = <38 39>;
-            layers = <1>;
+            layers = <0>;
+            timeout-ms = <500>;
         };
 
         combo_dvorak {
             bindings = <&to 0>;
             key-positions = <38 39>;
             layers = <1>;
+            timeout-ms = <500>;
         };
     };
 
