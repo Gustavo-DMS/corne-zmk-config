@@ -66,6 +66,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        tap_bcks_kp: tap_bcks_kp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_BCKS_KP";
+            bindings = <&kp>, <&backspace_del>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+        };
     };
 
     keymap {
@@ -124,7 +133,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &kp F12
+&kp F1      &kp F2        &kp F3        &kp F4            &kp F5        &kp F6          &kp F7      &kp F8      &kp F9                         &kp F10                &kp F11          &tap_bcks_kp F12 0
 &alt        &to 0         &to 2         &to 3             &to 4         &to 1           &kp LEFT    &kp DOWN    &kp UP                         &kp RIGHT              &kp PRINTSCREEN  &out OUT_TOG
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_NEXT  &mt C_BRIGHTNESS_DEC C_VOL_DN  &mt C_BRI_UP C_VOL_UP  &kp C_MUTE       &ext_power EP_TOG
                                         &kp LEFT_CONTROL  &kp SPACE     &kp LGUI        &kp RET     &to 4       &to 0
