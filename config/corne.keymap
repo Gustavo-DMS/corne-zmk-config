@@ -16,16 +16,16 @@
 
         combo_gaming {
             bindings = <&to 1>;
-            key-positions = <38 39>;
+            key-positions = <41 36>;
             layers = <0>;
-            timeout-ms = <500>;
+            timeout-ms = <50>;
         };
 
         combo_dvorak {
             bindings = <&to 0>;
-            key-positions = <38 39>;
+            key-positions = <36 41>;
             layers = <1>;
-            timeout-ms = <500>;
+            timeout-ms = <50>;
         };
     };
 
