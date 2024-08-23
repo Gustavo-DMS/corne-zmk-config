@@ -38,13 +38,6 @@
     };
 
     behaviors {
-        caps_lock: caps_lock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPS_LOCK";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CLCK>, <&caps_word>;
-        };
-
         layer_change: layer_change {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_CHANGE";
@@ -90,6 +83,22 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <500>;
+        };
+
+        caps_lock: caps_lock {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CAPS_LOCK";
+            bindings = <&kp LEFT_SHIFT>, <&tap_dance_caps>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LALT)>;
+        };
+
+        tap_dance_caps: tap_dance_caps {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_CAPS";
+            #binding-cells = <0>;
+            bindings = <&kp CAPSLOCK>, <&caps_word>;
         };
     };
 
