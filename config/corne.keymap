@@ -73,7 +73,7 @@
             bindings = <&kp LEFT_ALT>, <&kp RIGHT_ALT>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         tap_bcks_kp: tap_bcks_kp {
