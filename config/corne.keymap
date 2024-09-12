@@ -91,7 +91,7 @@
             bindings = <&kp LEFT_SHIFT>, <&tap_dance_caps>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LALT)>;
+            mods = <(MOD_LGUI)>;
         };
 
         tap_dance_caps: tap_dance_caps {
