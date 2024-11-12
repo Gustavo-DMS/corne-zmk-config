@@ -178,10 +178,10 @@
 
         numpad {
             bindings = <
-&trans           &kp COMMA  &kp PERIOD  &trans            &trans     &trans      &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &backspace_del
-&tap_dance_caps  &kp HOME   &kp PG_DN   &kp PG_UP         &kp END    &trans      &kp INS         &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp PLUS   &trans
-&trans           &trans     &trans      &trans            &trans     &trans      &kp KP_N0       &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp DOT
-                                        &kp LEFT_CONTROL  &kp SPACE  &kp LGUI    &kp ENTER       &to 0      &kp ESC
+&trans           &kp COMMA  &kp PERIOD  &trans            &trans     &trans          &kp KP_NUMLOCK  &kp KP_N7  &kp KP_N8        &kp KP_NUMBER_9  &kp MINUS  &backspace_del
+&tap_dance_caps  &kp HOME   &kp PG_DN   &kp PG_UP         &kp END    &studio_unlock  &kp INS         &kp KP_N4  &kp KP_N5        &kp KP_N6        &kp PLUS   &trans
+&trans           &trans     &trans      &trans            &trans     &trans          &kp KP_N0       &kp KP_N1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp COMMA  &kp DOT
+                                        &kp LEFT_CONTROL  &kp SPACE  &kp LGUI        &kp ENTER       &to 0      &kp ESC
             >;
 
             display-name = "NUMPAD";
