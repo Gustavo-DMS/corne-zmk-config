@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SWICH_WEAPON";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>, <&kp NUMBER_3>;
+            bindings = <&mt NUMBER_3 NUMBER_1>, <&kp NUMBER_2>;
 
             tapping-term-ms = <500>;
         };
