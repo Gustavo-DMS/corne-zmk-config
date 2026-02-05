@@ -118,7 +118,7 @@
             #binding-cells = <0>;
             bindings = <&mt NUMBER_3 NUMBER_1>, <&kp NUMBER_2>;
 
-            tapping-term-ms = <500>;
+            tapping-term-ms = <250>;
         };
     };
 
